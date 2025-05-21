@@ -9,10 +9,9 @@ public class WikipediaTask {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		WebDriver driver = new ChromeDriver();
-		driver.navigate().to("https://www.wikipedia.org/");
-
-		driver.manage().window().maximize();
+	WebDriver driver = new ChromeDriver();
+	driver.navigate().to("https://www.wikipedia.org/");
+	driver.manage().window().maximize();
         driver.findElement(By.xpath("//input[@name='search']")).sendKeys("Artificial Intelligence");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
         WebElement str=driver.findElement(By.linkText("History")); 
