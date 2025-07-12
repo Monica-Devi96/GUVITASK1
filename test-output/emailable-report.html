@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Parabank Test Suite</th></tr>
+<tr><td><a href="#t0">CrossBrowserTests</a></td><td class="num">16</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">84,024</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parabank Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">CrossBrowserTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.AccountTest</td><td><a href="#m0">viewSavingsAccountSummary</a></td><td rowspan="1">1752316122767</td><td rowspan="1">8185</td></tr><tr class="failedodd"><td rowspan="2">tests.TransactionSearchTest</td><td><a href="#m1">testSearchByDateRange</a></td><td rowspan="1">1752316136111</td><td rowspan="1">424</td></tr><tr class="failedodd"><td><a href="#m2">testSearchByTransactionId</a></td><td rowspan="1">1752316136710</td><td rowspan="1">445</td></tr><tr><th colspan="4">CrossBrowserTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.AccountTest</td><td><a href="#m3">viewCheckingAccountSummary</a></td><td rowspan="1">1752316118218</td><td rowspan="1">4547</td></tr><tr class="passedodd"><td rowspan="3">tests.CustomerSupportTest</td><td><a href="#m4">testSubmitFormWithEmptyFields</a></td><td rowspan="1">1752316139491</td><td rowspan="1">1216</td></tr><tr class="passedodd"><td><a href="#m5">testSubmitFormWithValidDetails</a></td><td rowspan="1">1752316140709</td><td rowspan="1">1164</td></tr><tr class="passedodd"><td><a href="#m6">testVerifySuccessMessage</a></td><td rowspan="1">1752316141876</td><td rowspan="1">1053</td></tr><tr class="passedeven"><td rowspan="2">tests.FundsTransferTest</td><td><a href="#m7">testInvalidFundTransfer</a></td><td rowspan="1">1752316131269</td><td rowspan="1">1322</td></tr><tr class="passedeven"><td><a href="#m8">testValidFundTransfer</a></td><td rowspan="1">1752316132597</td><td rowspan="1">1179</td></tr><tr class="passedodd"><td rowspan="5">tests.LoginTest</td><td><a href="#m9">loginWithEmptyFields</a></td><td rowspan="1">1752316081827</td><td rowspan="1">12979</td></tr><tr class="passedodd"><td><a href="#m10">loginWithInvalidEmailFormat</a></td><td rowspan="1">1752316094809</td><td rowspan="1">12632</td></tr><tr class="passedodd"><td><a href="#m11">loginWithInvalidPassword</a></td><td rowspan="1">1752316058963</td><td rowspan="1">11882</td></tr><tr class="passedodd"><td><a href="#m12">loginWithUnregisteredUser</a></td><td rowspan="1">1752316070850</td><td rowspan="1">10974</td></tr><tr class="passedodd"><td><a href="#m13">loginWithValidCredentials</a></td><td rowspan="1">1752316107444</td><td rowspan="1">10758</td></tr><tr class="passedeven"><td rowspan="3">tests.RequestLoanTest</td><td><a href="#m14">testLoanExceedingLimit</a></td><td rowspan="1">1752316137345</td><td rowspan="1">751</td></tr><tr class="passedeven"><td><a href="#m15">testMissingLoanDetails</a></td><td rowspan="1">1752316138098</td><td rowspan="1">688</td></tr><tr class="passedeven"><td><a href="#m16">testValidLoanRequest</a></td><td rowspan="1">1752316138788</td><td rowspan="1">691</td></tr><tr class="passedodd"><td rowspan="2">tests.TransactionSearchTest</td><td><a href="#m17">testSearchByAmount</a></td><td rowspan="1">1752316133783</td><td rowspan="1">1137</td></tr><tr class="passedodd"><td><a href="#m18">testSearchByDate</a></td><td rowspan="1">1752316134922</td><td rowspan="1">1186</td></tr></tbody>
+</table>
+<h2>CrossBrowserTests</h2><h3 id="m0">tests.AccountTest#viewSavingsAccountSummary</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.util.NoSuchElementException: No account found with type: SAVINGS
+	at pages.AccountPage.selectAccountByType(AccountPage.java:61)
+	at tests.AccountTest.viewSavingsAccountSummary(AccountTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.TransactionSearchTest#testSearchByDateRange</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div//input[@id=&apos;fromDate&apos;]&quot;}
+  (Session info: chrome=137.0.7151.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe628b1c61e3eaf3babef6e6f69e9fef, findElement {using=xpath, value=//div//input[@id=&apos;fromDate&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59285/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe628b1c61e3eaf3babef6e6f69e9fef
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at pages.TransactionSearchPage.searchByDateRange(TransactionSearchPage.java:60)
+	at tests.TransactionSearchTest.testSearchByDateRange(TransactionSearchTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.TransactionSearchTest#testSearchByTransactionId</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;transactionId&apos;]&quot;}
+  (Session info: chrome=137.0.7151.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe628b1c61e3eaf3babef6e6f69e9fef, findElement {using=xpath, value=//input[@id=&apos;transactionId&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59285/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe628b1c61e3eaf3babef6e6f69e9fef
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at pages.TransactionSearchPage.searchByTransactionId(TransactionSearchPage.java:48)
+	at tests.TransactionSearchTest.testSearchByTransactionId(TransactionSearchTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.AccountTest#viewCheckingAccountSummary</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.CustomerSupportTest#testSubmitFormWithEmptyFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.CustomerSupportTest#testSubmitFormWithValidDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.CustomerSupportTest#testVerifySuccessMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.FundsTransferTest#testInvalidFundTransfer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.FundsTransferTest#testValidFundTransfer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.LoginTest#loginWithEmptyFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.LoginTest#loginWithInvalidEmailFormat</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.LoginTest#loginWithInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">tests.LoginTest#loginWithUnregisteredUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">tests.LoginTest#loginWithValidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">tests.RequestLoanTest#testLoanExceedingLimit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">tests.RequestLoanTest#testMissingLoanDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">tests.RequestLoanTest#testValidLoanRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">tests.TransactionSearchTest#testSearchByAmount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">tests.TransactionSearchTest#testSearchByDate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

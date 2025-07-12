@@ -1,0 +1,13 @@
+<suite name="Parabank Test Suite">
+    <test name="CrossBrowserTests">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.AccountTest"/>
+            <class name="tests.FundsTransferTest"/>
+            <class name="tests.TransactionSearchTest"/>
+            <class name="tests.RequestLoanTest"/>
+            <class name="tests.CustomerSupportTest"/>
+        </classes>
+    </test>
+</suite>

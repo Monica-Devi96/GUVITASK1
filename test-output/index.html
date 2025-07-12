@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Parabank_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Parabank Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Parabank_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\smart\Downloads\ParaBank\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Parabank_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Parabank_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Parabank_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Parabank_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Parabank_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Parabank_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">19 methods, 3 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Parabank_Test_Suite" class="hide-methods failed suite-Parabank_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Parabank_Test_Suite -->
+                      <a href="#" panel-name="suite-Parabank_Test_Suite" class="show-methods failed suite-Parabank_Test_Suite"> (show)</a> <!-- show-methods failed suite-Parabank_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Parabank_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.TransactionSearchTest" class="method navigator-link" hash-for-method="testSearchByDateRange">testSearchByDateRange</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.TransactionSearchTest" class="method navigator-link" hash-for-method="testSearchByTransactionId">testSearchByTransactionId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.AccountTest" class="method navigator-link" hash-for-method="viewSavingsAccountSummary">viewSavingsAccountSummary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Parabank_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Parabank_Test_Suite" class="hide-methods passed suite-Parabank_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Parabank_Test_Suite -->
+                      <a href="#" panel-name="suite-Parabank_Test_Suite" class="show-methods passed suite-Parabank_Test_Suite"> (show)</a> <!-- show-methods passed suite-Parabank_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Parabank_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithEmptyFields">loginWithEmptyFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidEmailFormat">loginWithInvalidEmailFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidPassword">loginWithInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithUnregisteredUser">loginWithUnregisteredUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.FundsTransferTest" class="method navigator-link" hash-for-method="testInvalidFundTransfer">testInvalidFundTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.RequestLoanTest" class="method navigator-link" hash-for-method="testLoanExceedingLimit">testLoanExceedingLimit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.RequestLoanTest" class="method navigator-link" hash-for-method="testMissingLoanDetails">testMissingLoanDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.TransactionSearchTest" class="method navigator-link" hash-for-method="testSearchByAmount">testSearchByAmount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.TransactionSearchTest" class="method navigator-link" hash-for-method="testSearchByDate">testSearchByDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.CustomerSupportTest" class="method navigator-link" hash-for-method="testSubmitFormWithEmptyFields">testSubmitFormWithEmptyFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.CustomerSupportTest" class="method navigator-link" hash-for-method="testSubmitFormWithValidDetails">testSubmitFormWithValidDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.FundsTransferTest" class="method navigator-link" hash-for-method="testValidFundTransfer">testValidFundTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.RequestLoanTest" class="method navigator-link" hash-for-method="testValidLoanRequest">testValidLoanRequest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.CustomerSupportTest" class="method navigator-link" hash-for-method="testVerifySuccessMessage">testVerifySuccessMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parabank_Test_Suite" title="tests.AccountTest" class="method navigator-link" hash-for-method="viewCheckingAccountSummary">viewCheckingAccountSummary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Parabank_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Parabank_Test_Suite" class="panel Parabank_Test_Suite">
+          <div class="suite-Parabank_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.AccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewSavingsAccountSummary">
+                  </a> <!-- viewSavingsAccountSummary -->
+                  <span class="method-name">viewSavingsAccountSummary</span>
+                  <div class="stack-trace">java.util.NoSuchElementException: No account found with type: SAVINGS
+	at pages.AccountPage.selectAccountByType(AccountPage.java:61)
+	at tests.AccountTest.viewSavingsAccountSummary(AccountTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parabank_Test_Suite-class-failed -->
+          <div class="suite-Parabank_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.TransactionSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchByDateRange">
+                  </a> <!-- testSearchByDateRange -->
+                  <span class="method-name">testSearchByDateRange</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div//input[@id=&apos;fromDate&apos;]&quot;}
+  (Session info: chrome=137.0.7151.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe628b1c61e3eaf3babef6e6f69e9fef, findElement {using=xpath, value=//div//input[@id=&apos;fromDate&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59285/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe628b1c61e3eaf3babef6e6f69e9fef
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at pages.TransactionSearchPage.searchByDateRange(TransactionSearchPage.java:60)
+	at tests.TransactionSearchTest.testSearchByDateRange(TransactionSearchTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchByTransactionId">
+                  </a> <!-- testSearchByTransactionId -->
+                  <span class="method-name">testSearchByTransactionId</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;transactionId&apos;]&quot;}
+  (Session info: chrome=137.0.7151.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe628b1c61e3eaf3babef6e6f69e9fef, findElement {using=xpath, value=//input[@id=&apos;transactionId&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\smart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59285/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe628b1c61e3eaf3babef6e6f69e9fef
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at pages.TransactionSearchPage.searchByTransactionId(TransactionSearchPage.java:48)
+	at tests.TransactionSearchTest.testSearchByTransactionId(TransactionSearchTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parabank_Test_Suite-class-failed -->
+          <div class="suite-Parabank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewCheckingAccountSummary">
+                  </a> <!-- viewCheckingAccountSummary -->
+                  <span class="method-name">viewCheckingAccountSummary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parabank_Test_Suite-class-passed -->
+          <div class="suite-Parabank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CustomerSupportTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubmitFormWithEmptyFields">
+                  </a> <!-- testSubmitFormWithEmptyFields -->
+                  <span class="method-name">testSubmitFormWithEmptyFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubmitFormWithValidDetails">
+                  </a> <!-- testSubmitFormWithValidDetails -->
+                  <span class="method-name">testSubmitFormWithValidDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testVerifySuccessMessage">
+                  </a> <!-- testVerifySuccessMessage -->
+                  <span class="method-name">testVerifySuccessMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parabank_Test_Suite-class-passed -->
+          <div class="suite-Parabank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TransactionSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchByAmount">
+                  </a> <!-- testSearchByAmount -->
+                  <span class="method-name">testSearchByAmount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchByDate">
+                  </a> <!-- testSearchByDate -->
+                  <span class="method-name">testSearchByDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parabank_Test_Suite-class-passed -->
+          <div class="suite-Parabank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.FundsTransferTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidFundTransfer">
+                  </a> <!-- testInvalidFundTransfer -->
+                  <span class="method-name">testInvalidFundTransfer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidFundTransfer">
+                  </a> <!-- testValidFundTransfer -->
+                  <span class="method-name">testValidFundTransfer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parabank_Test_Suite-class-passed -->
+          <div class="suite-Parabank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithEmptyFields">
+                  </a> <!-- loginWithEmptyFields -->
+                  <span class="method-name">loginWithEmptyFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidEmailFormat">
+                  </a> <!-- loginWithInvalidEmailFormat -->
+                  <span class="method-name">loginWithInvalidEmailFormat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidPassword">
+                  </a> <!-- loginWithInvalidPassword -->
+                  <span class="method-name">loginWithInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithUnregisteredUser">
+                  </a> <!-- loginWithUnregisteredUser -->
+                  <span class="method-name">loginWithUnregisteredUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentials">
+                  </a> <!-- loginWithValidCredentials -->
+                  <span class="method-name">loginWithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parabank_Test_Suite-class-passed -->
+          <div class="suite-Parabank_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RequestLoanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoanExceedingLimit">
+                  </a> <!-- testLoanExceedingLimit -->
+                  <span class="method-name">testLoanExceedingLimit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingLoanDetails">
+                  </a> <!-- testMissingLoanDetails -->
+                  <span class="method-name">testMissingLoanDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLoanRequest">
+                  </a> <!-- testValidLoanRequest -->
+                  <span class="method-name">testValidLoanRequest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parabank_Test_Suite-class-passed -->
+        </div> <!-- panel Parabank_Test_Suite -->
+        <div panel-name="test-xml-Parabank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\smart\Downloads\ParaBank\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Parabank Test Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CrossBrowserTests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.AccountTest&quot;/&gt;
+      &lt;class name=&quot;tests.FundsTransferTest&quot;/&gt;
+      &lt;class name=&quot;tests.TransactionSearchTest&quot;/&gt;
+      &lt;class name=&quot;tests.RequestLoanTest&quot;/&gt;
+      &lt;class name=&quot;tests.CustomerSupportTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CrossBrowserTests --&gt;
+&lt;/suite&gt; &lt;!-- Parabank Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Parabank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Parabank Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">CrossBrowserTests (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Parabank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Parabank Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Parabank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Parabank Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Parabank_Test_Suite');
+function tableData_Parabank_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(19);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginWithEmptyFields')
+data.setCell(0, 2, 'tests.LoginTest')
+data.setCell(0, 3, 12979);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginWithInvalidEmailFormat')
+data.setCell(1, 2, 'tests.LoginTest')
+data.setCell(1, 3, 12632);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginWithInvalidPassword')
+data.setCell(2, 2, 'tests.LoginTest')
+data.setCell(2, 3, 11882);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginWithUnregisteredUser')
+data.setCell(3, 2, 'tests.LoginTest')
+data.setCell(3, 3, 10974);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginWithValidCredentials')
+data.setCell(4, 2, 'tests.LoginTest')
+data.setCell(4, 3, 10758);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'viewSavingsAccountSummary')
+data.setCell(5, 2, 'tests.AccountTest')
+data.setCell(5, 3, 8185);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'viewCheckingAccountSummary')
+data.setCell(6, 2, 'tests.AccountTest')
+data.setCell(6, 3, 4547);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testInvalidFundTransfer')
+data.setCell(7, 2, 'tests.FundsTransferTest')
+data.setCell(7, 3, 1322);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testSubmitFormWithEmptyFields')
+data.setCell(8, 2, 'tests.CustomerSupportTest')
+data.setCell(8, 3, 1216);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testSearchByDate')
+data.setCell(9, 2, 'tests.TransactionSearchTest')
+data.setCell(9, 3, 1186);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testValidFundTransfer')
+data.setCell(10, 2, 'tests.FundsTransferTest')
+data.setCell(10, 3, 1179);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testSubmitFormWithValidDetails')
+data.setCell(11, 2, 'tests.CustomerSupportTest')
+data.setCell(11, 3, 1164);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testSearchByAmount')
+data.setCell(12, 2, 'tests.TransactionSearchTest')
+data.setCell(12, 3, 1137);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testVerifySuccessMessage')
+data.setCell(13, 2, 'tests.CustomerSupportTest')
+data.setCell(13, 3, 1053);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testLoanExceedingLimit')
+data.setCell(14, 2, 'tests.RequestLoanTest')
+data.setCell(14, 3, 751);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testValidLoanRequest')
+data.setCell(15, 2, 'tests.RequestLoanTest')
+data.setCell(15, 3, 691);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testMissingLoanDetails')
+data.setCell(16, 2, 'tests.RequestLoanTest')
+data.setCell(16, 3, 688);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testSearchByTransactionId')
+data.setCell(17, 2, 'tests.TransactionSearchTest')
+data.setCell(17, 3, 445);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testSearchByDateRange')
+data.setCell(18, 2, 'tests.TransactionSearchTest')
+data.setCell(18, 3, 424);
+window.suiteTableData['Parabank_Test_Suite']= { tableData: data, tableDiv: 'times-div-Parabank_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Parabank_Test_Suite">
+              </div> <!-- times-div-Parabank_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Parabank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Parabank Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Parabank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">23 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.AccountTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">teardownSuite</span>
+                <br/>
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">startExtentReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CustomerSupportTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">teardownSuite</span>
+                <br/>
+                <span class="ignored-method-name">startExtentReport</span>
+                <br/>
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.TransactionSearchTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startExtentReport</span>
+                <br/>
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">teardownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.FundsTransferTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">startExtentReport</span>
+                <br/>
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">teardownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">sessionTimeoutTest</span>
+                <br/>
+                <span class="ignored-method-name">verifyPasswordFieldIsMasked</span>
+                <br/>
+                <span class="ignored-method-name">rememberMeFunctionality</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.RequestLoanTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">teardownSuite</span>
+                <br/>
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">startExtentReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Parabank_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-suite before">
+                <span class="method-name">startExtentReport</span>
+                <span class="method-start">15299 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">startLog</span>
+                <span class="method-start">15550 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15556 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.LoginTest.loginWithInvalidPassword())</span>
+                <span class="method-start">15569 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvalidPassword</span>
+                <span class="method-start">15577 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=loginWithInvalidPassword status=SUCCESS method=LoginTest.loginWithInvalidPassword()...)</span>
+                <span class="method-start">27461 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.LoginTest.loginWithUnregisteredUser())</span>
+                <span class="method-start">27463 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithUnregisteredUser</span>
+                <span class="method-start">27464 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=loginWithUnregisteredUser status=SUCCESS method=LoginTest.loginWithUnregisteredUser...)</span>
+                <span class="method-start">38439 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginWithEmptyFields</span>
+                <span class="method-start">38441 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.LoginTest.loginWithEmptyFields() throws java.lang.InterruptedException)</span>
+                <span class="method-start">38441 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=loginWithEmptyFields status=SUCCESS method=LoginTest.loginWithEmptyFields()[pri:3, ...)</span>
+                <span class="method-start">51421 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.LoginTest.loginWithInvalidEmailFormat() throws java.lang.InterruptedException)</span>
+                <span class="method-start">51422 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvalidEmailFormat</span>
+                <span class="method-start">51423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=loginWithInvalidEmailFormat status=SUCCESS method=LoginTest.loginWithInvalidEmailFo...)</span>
+                <span class="method-start">64056 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.LoginTest.loginWithValidCredentials())</span>
+                <span class="method-start">64058 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidCredentials</span>
+                <span class="method-start">64058 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=loginWithValidCredentials status=SUCCESS method=LoginTest.loginWithValidCredentials...)</span>
+                <span class="method-start">74819 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endLog</span>
+                <span class="method-start">74822 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startLog</span>
+                <span class="method-start">74826 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">74828 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.AccountTest.viewCheckingAccountSummary() throws java.lang.InterruptedException)</span>
+                <span class="method-start">74831 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">viewCheckingAccountSummary</span>
+                <span class="method-start">74832 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=viewCheckingAccountSummary status=SUCCESS method=AccountTest.viewCheckingAccountSum...)</span>
+                <span class="method-start">79380 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.AccountTest.viewSavingsAccountSummary() throws java.lang.InterruptedException)</span>
+                <span class="method-start">79381 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">viewSavingsAccountSummary</span>
+                <span class="method-start">79381 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=viewSavingsAccountSummary status=FAILURE method=AccountTest.viewSavingsAccountSumma...)</span>
+                <span class="method-start">87568 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endLog</span>
+                <span class="method-start">87879 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.FundsTransferTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startLog</span>
+                <span class="method-start">87880 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">87881 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.FundsTransferTest.testInvalidFundTransfer())</span>
+                <span class="method-start">87883 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidFundTransfer</span>
+                <span class="method-start">87883 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=testInvalidFundTransfer status=SUCCESS method=FundsTransferTest.testInvalidFundTran...)</span>
+                <span class="method-start">89207 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.FundsTransferTest.testValidFundTransfer())</span>
+                <span class="method-start">89210 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidFundTransfer</span>
+                <span class="method-start">89211 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=testValidFundTransfer status=SUCCESS method=FundsTransferTest.testValidFundTransfer...)</span>
+                <span class="method-start">90391 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endLog</span>
+                <span class="method-start">90392 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TransactionSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startLog</span>
+                <span class="method-start">90393 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">90395 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testSearchByAmount</span>
+                <span class="method-start">90397 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.TransactionSearchTest.testSearchByAmount())</span>
+                <span class="method-start">90397 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=testSearchByAmount status=SUCCESS method=TransactionSearchTest.testSearchByAmount()...)</span>
+                <span class="method-start">91535 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.TransactionSearchTest.testSearchByDate())</span>
+                <span class="method-start">91536 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchByDate</span>
+                <span class="method-start">91536 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=testSearchByDate status=SUCCESS method=TransactionSearchTest.testSearchByDate()[pri...)</span>
+                <span class="method-start">92722 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.TransactionSearchTest.testSearchByDateRange())</span>
+                <span class="method-start">92724 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSearchByDateRange</span>
+                <span class="method-start">92725 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=testSearchByDateRange status=FAILURE method=TransactionSearchTest.testSearchByDateR...)</span>
+                <span class="method-start">93152 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSearchByTransactionId</span>
+                <span class="method-start">93324 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.TransactionSearchTest.testSearchByTransactionId())</span>
+                <span class="method-start">93324 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=testSearchByTransactionId status=FAILURE method=TransactionSearchTest.testSearchByT...)</span>
+                <span class="method-start">93770 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endLog</span>
+                <span class="method-start">93953 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RequestLoanTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startLog</span>
+                <span class="method-start">93955 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">93956 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.RequestLoanTest.testLoanExceedingLimit())</span>
+                <span class="method-start">93958 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoanExceedingLimit</span>
+                <span class="method-start">93959 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=testLoanExceedingLimit status=SUCCESS method=RequestLoanTest.testLoanExceedingLimit...)</span>
+                <span class="method-start">94711 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testMissingLoanDetails</span>
+                <span class="method-start">94712 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.RequestLoanTest.testMissingLoanDetails())</span>
+                <span class="method-start">94712 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=testMissingLoanDetails status=SUCCESS method=RequestLoanTest.testMissingLoanDetails...)</span>
+                <span class="method-start">95401 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.RequestLoanTest.testValidLoanRequest())</span>
+                <span class="method-start">95401 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLoanRequest</span>
+                <span class="method-start">95402 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=testValidLoanRequest status=SUCCESS method=RequestLoanTest.testValidLoanRequest()[p...)</span>
+                <span class="method-start">96094 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endLog</span>
+                <span class="method-start">96094 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CustomerSupportTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startLog</span>
+                <span class="method-start">96096 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">96098 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testSubmitFormWithEmptyFields</span>
+                <span class="method-start">96105 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.CustomerSupportTest.testSubmitFormWithEmptyFields())</span>
+                <span class="method-start">96105 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=testSubmitFormWithEmptyFields status=SUCCESS method=CustomerSupportTest.testSubmitF...)</span>
+                <span class="method-start">97321 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testSubmitFormWithValidDetails</span>
+                <span class="method-start">97323 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.CustomerSupportTest.testSubmitFormWithValidDetails())</span>
+                <span class="method-start">97323 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=testSubmitFormWithValidDetails status=SUCCESS method=CustomerSupportTest.testSubmit...)</span>
+                <span class="method-start">98488 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentTest(public void tests.CustomerSupportTest.testVerifySuccessMessage())</span>
+                <span class="method-start">98489 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testVerifySuccessMessage</span>
+                <span class="method-start">98490 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureTestResult([TestResult name=testVerifySuccessMessage status=SUCCESS method=CustomerSupportTest.testVerifySucces...)</span>
+                <span class="method-start">99545 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endLog</span>
+                <span class="method-start">99547 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">flushReport</span>
+                <span class="method-start">99590 ms</span>
+              </div> <!-- configuration-suite after -->
+              <div class="configuration-suite after">
+                <span class="method-name">teardownSuite</span>
+                <span class="method-start">100367 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
