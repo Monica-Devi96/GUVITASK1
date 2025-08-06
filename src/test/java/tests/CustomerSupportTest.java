@@ -13,7 +13,7 @@ public class CustomerSupportTest extends BaseTest {
 
     @BeforeClass(alwaysRun = true)
     public void setUp() {
-        supportPage = new CustomerSupportPage(driver);
+        supportPage = new CustomerSupportPage();
     }
 
     @Test

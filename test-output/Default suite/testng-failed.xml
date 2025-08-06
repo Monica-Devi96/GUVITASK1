@@ -3,20 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.TransactionSearchTest">
+      <class name="tests.CreateSavingsAccountTest">
         <methods>
-          <include name="setupSuite"/>
-          <include name="createExtentTest"/>
+          <include name="setup"/>
           <include name="startLog"/>
+          <include name="createExtentTest"/>
+          <include name="teardown"/>
           <include name="endLog"/>
           <include name="startExtentReport"/>
-          <include name="testSearchByTransactionId"/>
-          <include name="teardownSuite"/>
+          <include name="createSavingsAccount"/>
           <include name="flushReport"/>
-          <include name="setUp"/>
-          <include name="testSearchByDateRange"/>
+          <include name="captureTestResult"/>
         </methods>
-      </class> <!-- tests.TransactionSearchTest -->
+      </class> <!-- tests.CreateSavingsAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

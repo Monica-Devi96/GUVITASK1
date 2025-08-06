@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.DriverFactory;
+
 import java.time.Duration;
 
 public class CustomerSupportPage {
@@ -22,9 +24,9 @@ public class CustomerSupportPage {
     private By successMessage = By.xpath("//*[contains(text(), 'Thank you') or contains(text(), 'Message sent')]");
     private By validationMessage = By.xpath("//*[contains(text(), 'Name is required') or contains(text(),'please enter')]");
 
-    public CustomerSupportPage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    public CustomerSupportPage() {
+    	this.driver = DriverFactory.getDriver();
+        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(10));
     }
     
     public void navigateToCustomerSupport() {

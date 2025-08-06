@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.DriverFactory;
+
 import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -23,9 +25,9 @@ public class AccountPage {
     private final By transactionsLink = By.linkText("Find Transactions");
     private final By noTransactionsMessage = By.xpath("//*[contains(text(), 'No transactions found')]");
 
-    public AccountPage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    public AccountPage() {
+    	this.driver = DriverFactory.getDriver();
+        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(10));
     }
     
     public void navigateToAccountsOverview() {
@@ -137,3 +139,4 @@ public class AccountPage {
         return true;
     }
 }
+

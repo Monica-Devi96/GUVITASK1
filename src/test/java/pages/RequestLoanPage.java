@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.DriverFactory;
+
 import java.time.Duration;
 
 public class RequestLoanPage {
@@ -20,11 +22,10 @@ public class RequestLoanPage {
     private By loanStatus = By.xpath("//td[@id='loanStatus']");
     private By loanRequestDeniedMessage = By.xpath("//*[@id=\"loanRequestDenied\"]/p");
     private By loanRequestSuccessMessage = By.xpath("//p[contains(text(),'Congratulations')]");
-    private By errorMessage = By.xpath("//p[contains(text(),'error') or contains(text(),'required') or contains(text(),'invalid')]");
 
-    public RequestLoanPage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    public RequestLoanPage() {
+    	this.driver = DriverFactory.getDriver();
+        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(10));
     }
     
     public void navigateToRequestLoan() {

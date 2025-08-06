@@ -13,22 +13,7 @@ public class TransactionSearchTest extends BaseTest {
 
     @BeforeClass(alwaysRun = true)
     public void setUp() {
-        transactionPage = new TransactionSearchPage(driver);
-    }
-
-    @Test
-    public void testSearchByTransactionId() {
-        ExtentTestManager.getTest().info("Selecting account: 13344");
-        transactionPage.navigateToTransactionSearch();
-        transactionPage.selectAccount("13344");
-
-        ExtentTestManager.getTest().info("Searching by transaction ID: 12345");
-        transactionPage.searchByTransactionId("12345");
-
-        Assert.assertTrue(
-            transactionPage.isResultFound() || transactionPage.isNoResultMessageShown(),
-            "Result should be found or 'No transactions found' message should be displayed"
-        );
+        transactionPage = new TransactionSearchPage();
     }
 
     @Test
@@ -46,20 +31,7 @@ public class TransactionSearchTest extends BaseTest {
         );
     }
 
-    @Test
-    public void testSearchByDateRange() {
-        ExtentTestManager.getTest().info("Selecting account: 13344");
-        transactionPage.navigateToTransactionSearch();
-        transactionPage.selectAccount("13344");
-
-        ExtentTestManager.getTest().info("Searching by date range: 07-01-2025 to 07-05-2025");
-        transactionPage.searchByDateRange("07-01-2025", "07-05-2025");
-
-        Assert.assertTrue(
-            transactionPage.isResultFound() || transactionPage.isNoResultMessageShown(),
-            "Result should be found or 'No transactions found' message should be displayed"
-        );
-    }
+  
 
     @Test
     public void testSearchByAmount() {

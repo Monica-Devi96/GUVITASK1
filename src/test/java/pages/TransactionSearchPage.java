@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.DriverFactory;
+
 import java.time.Duration;
 
 public class TransactionSearchPage {
@@ -28,9 +30,9 @@ public class TransactionSearchPage {
     private By resultsTable = By.xpath("//table[@id='transactionTable']");
     private By noResultsMsg = By.xpath("//*[contains(text(),'No transactions found')]");
 
-    public TransactionSearchPage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    public TransactionSearchPage() {
+    	this.driver = DriverFactory.getDriver();
+        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(10));
     }
     
     public void navigateToTransactionSearch() {

@@ -13,7 +13,7 @@ public class FundsTransferTest extends BaseTest {
 
     @BeforeClass(alwaysRun = true)
     public void setUp() {
-        fundsTransferPage = new FundsTransferPage(driver);
+        fundsTransferPage = new FundsTransferPage();
     }
 
     @Test

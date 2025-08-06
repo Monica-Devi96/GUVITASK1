@@ -4,6 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import utils.DriverFactory;
+
 import java.time.Duration;
 
 public class LoginPage {
@@ -17,9 +20,9 @@ public class LoginPage {
     private By errorMessage = By.cssSelector("p.error");
     private By accountOverviewHeader = By.xpath("//h1[text()='Accounts Overview']");
 
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    public LoginPage() {
+    	this.driver = DriverFactory.getDriver();
+        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(10));
     }
 
     // 🔁 Reusable combined login method

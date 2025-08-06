@@ -13,7 +13,7 @@ public class RequestLoanTest extends BaseTest {
 
     @BeforeClass
     public void setUp() {
-        requestLoanPage = new RequestLoanPage(driver);
+        requestLoanPage = new RequestLoanPage();
     }
 
     @Test
